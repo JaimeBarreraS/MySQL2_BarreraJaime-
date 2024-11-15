@@ -70,3 +70,4 @@ CREATE TABLE Alquiler (
 );
 show tables;
 
+
