@@ -68,3 +68,5 @@ CREATE TABLE Alquiler (
     FOREIGN KEY (id_sucursal_salida) REFERENCES Sucursal(id_sucursal),
     FOREIGN KEY (id_sucursal_llegada) REFERENCES Sucursal(id_sucursal)
 );
+show tables;
+

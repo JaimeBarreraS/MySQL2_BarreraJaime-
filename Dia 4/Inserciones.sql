@@ -344,7 +344,7 @@ INSERT INTO Vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, pue
 (25, 'Sedan', 'VWX345', 'Hyundai Sonata', 2020, 4, 5, true, '2.4L', 'Azul'),
 (26, 'SUV', 'YZA678', 'Mazda CX-9', 2022, 7, 7, true, '3.7L', 'Negro'),
 (27, 'Pickup', 'BCD012', 'GMC Sierra', 2021, 4, 5, false, '4.3L', 'Blanco'),
-(28, 'Coupe', 'EFG345', 'Chevrolet Camaro', 2020, 2, 4, true, '6.2L', 'Rojo'),
+(28, 'Coupe', 'EFG346', 'Chevrolet Camaro', 2020, 2, 4, true, '6.2L', 'Rojo'),
 (29, 'SUV', 'HIJ678', 'Jeep Cherokee', 2022, 5, 5, false, '3.2L', 'Gris'),
 (30, 'Hatchback', 'KLM901', 'Fiat 500', 2021, 3, 4, false, '1.4L', 'Amarillo'),
 (31, 'Sedan', 'NOP234', 'Chrysler 300', 2021, 4, 5, true, '3.6L', 'Blanco'),
@@ -412,16 +412,15 @@ INSERT INTO Vehiculo (id_vehiculo, tipo_vehiculo, placa, referencia, modelo, pue
 (93, 'Pickup', 'STU234', 'Ram 1500', 2021, 4, 5, false, '5.7L', 'Plata'),
 (94, 'SUV', 'VWX567', 'Ford F-150', 2020, 5, 5, true, '3.5L', 'Rojo'),
 (95, 'Hatchback', 'YZA890', 'Volkswagen Polo', 2021, 5, 5, false, '1.0L', 'Gris'),
-(96, 'Sedan', 'BCD012', 'Hyundai Sonata', 2020, 4, 5, true, '2.0L', 'Plata'),
+(96, 'Sedan', 'BCD013', 'Hyundai Sonata', 2020, 4, 5, true, '2.0L', 'Plata'),
 (97, 'SUV', 'EFG345', 'BMW X4', 2022, 5, 5, true, '2.0L', 'Negro'),
-(98, 'Pickup', 'HIJ678', 'Chevrolet Colorado', 2021, 4, 5, true, '3.6L', 'Blanco'),
-(99, 'Coupe', 'KLM901', 'Ford Mustang', 2020, 2, 2, true, '5.0L', 'Rojo'),
-(100, 'SUV', 'NOP234', 'Audi Q5', 2021, 5, 5, true, '2.0L', 'Plata');
+(98, 'Pickup', 'HIJ673', 'Chevrolet Colorado', 2021, 4, 5, true, '3.6L', 'Blanco'),
+(99, 'Coupe', 'KLM921', 'Ford Mustang', 2020, 2, 2, true, '5.0L', 'Rojo'),
+(100, 'SUV', 'NOP244', 'Audi Q5', 2021, 5, 5, true, '2.0L', 'Plata');
 
 -- INSERCIONES TABLA ALQUILER
 
-INSERT INTO Alquiler (id_alquiler, id_cliente, id_vehiculo, id_empleado, id_sucursal_salida, fecha_salida, id_sucursal_llegada, 
-fecha_llegada, fecha_esperada_llegada, valor_alquiler_por_semana, valor_alquiler_por_dia, porcentaje_descuento, valor_cotizado, valor_pagado)
+INSERT INTO Alquiler (id_alquiler, id_cliente, id_vehiculo, id_empleado, id_sucursal_salida, fecha_salida, id_sucursal_llegada, fecha_llegada, fecha_esperada_llegada, valor_alquiler_por_semana, valor_alquiler_por_dia, porcentaje_descuento, valor_cotizado, valor_pagado)
 VALUES
 (1, 1, 5, 3, 1, '2024-11-01', 2, '2024-11-10', '2024-11-08', 350.00, 50.00, 10.00, 490.00, 450.00),
 (2, 2, 7, 4, 2, '2024-11-02', 3, '2024-11-12', '2024-11-10', 400.00, 55.00, 5.00, 485.00, 460.00),
