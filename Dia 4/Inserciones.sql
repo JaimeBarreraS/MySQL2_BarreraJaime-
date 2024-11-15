@@ -2,7 +2,6 @@ USE AutoRental;
 
 -- INSERCIONES TABLA SUCURSAL
 
-delete from sucursal where id_sucursal = 6;
 
 INSERT INTO Sucursal (id_sucursal, ciudad, direccion, telefono_fijo, telefono_celular, correo_electronico) VALUES
 (1, 'Bogotá', 'Calle 123 #45-67', '6011234567', '3001234567', 'contacto1@bogota.com'),
