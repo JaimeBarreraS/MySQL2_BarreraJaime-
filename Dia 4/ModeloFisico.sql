@@ -46,7 +46,6 @@ CREATE TABLE Vehiculo (
     motor VARCHAR(50),
     color VARCHAR(30)
 );
-
 CREATE TABLE Alquiler (
     id_alquiler INT PRIMARY KEY,
     id_cliente INT,
@@ -69,5 +68,6 @@ CREATE TABLE Alquiler (
     FOREIGN KEY (id_sucursal_llegada) REFERENCES Sucursal(id_sucursal)
 );
 show tables;
+
 
 

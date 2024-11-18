@@ -91,7 +91,9 @@ END//
 
 DELIMITER ;
 
-select  id_vehiculo, tipo_vehiculo, ContarVehiculosPorTipo(tipo_vehiculo) as Vehiculos_Por_Tipo from Vehiculo;
+select tipo_vehiculo, ContarVehiculosPorTipo(tipo_vehiculo) as Vehiculos_Por_Tipo from Vehiculo group by tipo_vehiculo;
+
+
 
 /*
 4. CALCULAR EL TOTAL DE INGRESOS POR SUCURSAL
