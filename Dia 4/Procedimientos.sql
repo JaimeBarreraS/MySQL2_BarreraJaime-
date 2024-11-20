@@ -16,8 +16,8 @@ END //
 DELIMITER ;
 
 CALL AñadirSucursal (
-    'Ciudad de México', 
-    'Av. Insurgentes Sur 1234', 
+    'Tibu', 
+    'Av. Barrio Largo Sur 1234', 
     '55-1234-5678', 
     '55-9876-5432', 
     'contacto@sucursal.com'
