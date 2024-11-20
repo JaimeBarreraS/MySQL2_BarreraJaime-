@@ -2,7 +2,7 @@ CREATE DATABASE AutoRental ;
 USE AutoRental;
 
 CREATE TABLE Sucursal (
-    id_sucursal INT PRIMARY KEY,
+    id_sucursal INT PRIMARY KEY auto_increment ,
     ciudad VARCHAR(100),
     direccion VARCHAR(255),
     telefono_fijo VARCHAR(20),
@@ -11,7 +11,7 @@ CREATE TABLE Sucursal (
 );
 
 CREATE TABLE Empleado (
-    id_empleado INT PRIMARY KEY ,
+    id_empleado INT PRIMARY KEY auto_increment  ,
     id_sucursal INT,
     cedula VARCHAR(20) UNIQUE,
     nombres VARCHAR(100),
@@ -24,7 +24,7 @@ CREATE TABLE Empleado (
 );
 
 CREATE TABLE Cliente (
-    id_cliente INT PRIMARY KEY,
+    id_cliente INT PRIMARY KEY auto_increment ,
     cedula VARCHAR(20) UNIQUE,
     nombres VARCHAR(100),
     apellidos VARCHAR(100),
@@ -35,9 +35,10 @@ CREATE TABLE Cliente (
 );
 
 CREATE TABLE Vehiculo (
-    id_vehiculo INT PRIMARY KEY,
+    id_vehiculo INT PRIMARY KEY auto_increment ,
     tipo_vehiculo VARCHAR(50),
     placa VARCHAR(20) UNIQUE,
+    disponibilidad BOOLEAN,
     referencia VARCHAR(50),
     modelo INT,
     puertas INT,
@@ -46,8 +47,9 @@ CREATE TABLE Vehiculo (
     motor VARCHAR(50),
     color VARCHAR(30)
 );
+
 CREATE TABLE Alquiler (
-    id_alquiler INT PRIMARY KEY,
+    id_alquiler INT PRIMARY KEY auto_increment ,
     id_cliente INT,
     id_vehiculo INT,
     id_empleado INT,
@@ -68,6 +70,4 @@ CREATE TABLE Alquiler (
     FOREIGN KEY (id_sucursal_llegada) REFERENCES Sucursal(id_sucursal)
 );
 show tables;
-
-
-
+select * from Vehiculo;
