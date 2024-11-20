@@ -15,7 +15,7 @@ BEGIN
 END //
 DELIMITER ;
 
-CALL AñadirSucursal(
+CALL AñadirSucursal (
     'Ciudad de México', 
     'Av. Insurgentes Sur 1234', 
     '55-1234-5678', 
@@ -47,7 +47,7 @@ END //
 DELIMITER ;
 
 CALL ActualizarSucursal(
-    6, 
+    5, 
     'Cucuta', 
     'Av. Motiles calle 20 #13-35', 
     '55-1234-5678', 
@@ -80,7 +80,7 @@ BEGIN
     WHERE id_vehiculo = p_id_vehiculo;
 END //
 DELIMITER ;
-CALL DisponibilidadVehiculo(15, TRUE);
+CALL DisponibilidadVehiculo(3, TRUE);
 select * from Vehiculo;
 
 -- #######################################################
@@ -112,8 +112,8 @@ BEGIN
     WHERE id_alquiler = p_id_alquiler;
 END //
 DELIMITER ;
-CALL ActualizarSucursalSalida(1, 3);
-select * from Sucursal;
+CALL ActualizarSucursalSalida(1, 4);
+select * from Alquiler;
 
 -- #######################################################
 -- 7. Actualizar la llegada de Sucursal ##############################
@@ -129,7 +129,7 @@ BEGIN
 END //
 DELIMITER ;
 CALL ActualizarSucursalLlegada(1, 4);
-select * from Sucursal;
+select * from Alquiler;
 
 -- #######################################################
 -- 8. Actualizar el valor cotizado: ##############################
@@ -145,7 +145,7 @@ BEGIN
 END //
 DELIMITER ;
 CALL ActualizarValorCotizado(1, 1500.00);
-select * from Sucursal;
+select * from Alquiler;
 
 -- #######################################################
 -- 9. Actualizar el valor pagado: ##############################
@@ -161,7 +161,7 @@ BEGIN
 END //
 DELIMITER ;
 CALL ActualizarValorPagado(1, 1400.00);
-select * from Sucursal;
+select * from Alquiler;
 
 
 
