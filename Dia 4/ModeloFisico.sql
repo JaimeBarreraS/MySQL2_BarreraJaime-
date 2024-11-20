@@ -70,4 +70,4 @@ CREATE TABLE Alquiler (
     FOREIGN KEY (id_sucursal_llegada) REFERENCES Sucursal(id_sucursal)
 );
 show tables;
-select * from Vehiculo;
+select * from Alquiler;
